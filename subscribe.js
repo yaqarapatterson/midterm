@@ -7,6 +7,11 @@ maya scandinaro
 
 ******************/
 
+$(document).ready(function() {
+	$("#note1").hide();
+	$("#note2").hide();
+});
+
 function validateForm() {
 	var name = document.getElementsByName("name")[0].value;
 	var email = document.getElementsByName("email")[0].value;
@@ -50,9 +55,16 @@ function validateDonation() {
 	}
 }
 
-$(function() {
-	$("#tooltip").tooltip();
+$("#input1").hover(function() {
+	$("#note1").fadeIn( 300 );
+	$("#note1").show();
+	$("#note1").fadeOut( 300 );
 });
 
+$("#input2").hover(function() {
+	$("#note2").fadeIn( 300 );
+	$("#note2").show();
+	$("#note2").fadeOut( 300 );
+});
 
 
