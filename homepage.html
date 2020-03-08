@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="ExtStyle.css">
+
+        <title>BOSTON TOURS</title>
+
+          <style type="text/css">
+          .slideshow{
+             clear:both;
+
+          }
+
+          .box1 {
+              background-color: yellow;
+          }
+          .box2 {
+              background-color: pink;
+          }
+          .box3 {
+              background-color: grey;
+          }
+          .box4 {
+              background-color: red;
+          }
+          .clearfix {
+              clear: both;
+          }
+          </style>
+
+
+    </head>
+
+    <body>
+
+        <div class="container">
+            <header id="header">BOSTON TOURISM</header>
+
+            <div id="navigation">
+                <a href="#">ABOUT BOSTON</a>
+                <a href="#">PLACES TO STAY</a>
+                <a href="#">TOURS/TRAILS</a>
+                <a href="#">VENUES</a>
+                <a href="#">FOOD & SHOPPING</a>
+            </div>
+
+            <div id="main_content">
+                <section class="slideshow">
+                    <img class="mySlides" src="images/boston_water.JPG" style="width:100%">
+                    <img class="mySlides" src="images/fenway_field.JPG" style="width:100%">
+                  <!--- <img class="mySlides" src="img_band_chicago.jpg" style="width:100%"> -->
+                  </section>
+                  
+                  <script>
+                  // Automatic Slideshow - change image every 3 seconds
+                  var myIndex = 0;
+                  carousel();
+                  
+                  function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                      x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) {myIndex = 1}
+                    x[myIndex-1].style.display = "block";
+                    setTimeout(carousel, 3000);
+                  }
+                  </script>
+                  
+                <div class="box box1">box 1</div>
+                <div class="box box2">box 2</div>
+                <div class="box box3">box 3</div>
+                <div class="box box4">box 4</div>
+            </div>
+
+
+        
+
+            </div>
+            <div id="footer"> Footer
+            </div>
+
+
+
+
+
+    </body>
+</html>
