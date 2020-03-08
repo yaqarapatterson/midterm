@@ -13,6 +13,7 @@ maya scandinaro
 
 	<head>
 		<title>Subscribe</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="ExtStyle.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<style type="text/css">
@@ -20,20 +21,26 @@ maya scandinaro
 				padding-left: 60px;
 				padding-bottom: 20px;
 				line-height: 1.4;
-
 			}
 			#donateHeader {
 				font-size: 30px;
+				color: #4D6273 
 			}
 			#subscribeHeader {
 				font-size: 30px;
+				color: #4D6273
+			}
+			#thanks {
+				display: flex;
+			}
+			#col {
+				columns: 100px 2
 			}
 		</style>
 	</head>
 
 	<body>
 		<header id="header">BOSTON TOURISM</header>
-
 		<nav id="navigation">
 			<a href="#">ABOUT BOSTON</a>
             <a href="#">PLACES TO STAY</a>
@@ -41,7 +48,6 @@ maya scandinaro
             <a href="#">VENUES</a>
             <a href="#">FOOD & SHOPPING</a>
 		</nav>
-
 		<form onsubmit ="return validateDonation()">
 			<p id="donateHeader">DONATE</p>
 			<p>Love getting exclusive updates on the
@@ -56,11 +62,14 @@ maya scandinaro
 				<input type="radio"/> Paypal 
 				<input type="radio"/> Check 
 			</p>
-			<input type="submit" value="Donate"/>
+			<div id="thanks">
+				<input id="input1" type="submit" value="Donate"/> 
+				<div id="note1">
+				Thank you!
+				</div>
+			</div>
 		</form>
-
 		<hr/>
-
 		<form onsubmit ="return validateForm()">
 			<p id="subscribeHeader">SUBSCRIBE</p>
 			<p>Want to receive the latest updates on new Boston events,
@@ -99,18 +108,17 @@ maya scandinaro
 				<input type="radio"/>Once a week
 				<input type="radio"/>Once a month
 			</p>
-			<div id="buttonHover">
-			<input type="submit" value="Subscribe"/>
+			<div id="thanks">
+				<input id="input2" type="submit" value="Subscribe"/> 
+				<div id="note2">
+				Thank you!
+				</div>
 			</div>
 		</form>
 
 		<footer id="footer">FOOTER</footer>
-
 		<script src="subscribe.js"></script>
-		<script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+		
 	</body>
 
 </html>
