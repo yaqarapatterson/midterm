@@ -1,0 +1,125 @@
+<!--------------
+
+subscribe.html
+comp 20 midterm
+maya scandinaro 
+3/10/20 
+
+---------------->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Subscribe</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="ExtStyle.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style type="text/css">
+			form {
+				padding-left: 60px;
+				padding-bottom: 20px;
+				line-height: 1.4;
+			}
+			#donateHeader {
+				font-size: 30px;
+				color: #4D6273 
+			}
+			#subscribeHeader {
+				font-size: 30px;
+				color: #4D6273
+			}
+			#thanks {
+				display: flex;
+			}
+			#col {
+				columns: 100px 2
+			}
+		</style>
+	</head>
+
+	<body>
+		<header id="header">BOSTON TOURISM</header>
+
+		<nav id="navigation">
+			<a href="#">ABOUT BOSTON</a>
+            <a href="#">PLACES TO STAY</a>
+            <a href="#">TOURS/TRAILS</a>
+            <a href="#">VENUES</a>
+            <a href="#">FOOD & SHOPPING</a>
+		</nav>
+
+		<form onsubmit ="return validateDonation()">
+			<p id="donateHeader">DONATE</p>
+			<p>Love getting exclusive updates on the
+				latest Boston news and events?<br/> All donations support volunteers who
+				maintain our website and keep it exciting! 
+				<br/>Support Boston Tourism
+				by donating today.</p>
+			<p>Name*: <input type="text"  name='donateName' id="tooltip" title="Enter your name" /></p>
+			<p>Donation Amount (USD)*: $ <input type="text"  name='amt' /></p>
+			<p>Payment Method*:<br/>
+				<input type="radio"checked="checked"/> Credit Card  
+				<input type="radio"/> Paypal 
+				<input type="radio"/> Check 
+			</p>
+			<div id="thanks">
+				<input id="input1" type="submit" value="Donate"/> 
+				<div id="note1">
+				Thank you!
+				</div>
+			</div>
+		</form>
+
+		<hr/>
+		<form onsubmit ="return validateForm()">
+			<p id="subscribeHeader">SUBSCRIBE</p>
+			<p>Want to receive the latest updates on new Boston events,
+			restaurants, museums, and more? <br/>Subscribe today!</p>
+			<p>Name*: <input type="text"  name='name' /></p>
+			<p>Email*:  <input type="text"  name='email' /></p>
+			<p>Reason for visit:
+			<select id="form">
+				<option value="other">Other</option>
+				<option value="vacation">Vacation</option>
+				<option value="business">Business</option>
+				<option value="college">College Tours</option>
+				<option value="family">Meeting Family</option>
+				<option value="resident">Current Resident</option>
+			</select>
+			</p>
+			<p>Customize your notifications!<br/>
+			   Select at least 2 activities that interest you*:<br/>
+				<input type="checkbox" id="check1" name="interest">
+				<label for="check1"> Art Museums</label><br>
+				<input type="checkbox" id="check2" name="interest">
+				<label for="check2"> Science Museums</label><br>
+				<input type="checkbox" id="check3" name="interest">
+				<label for="check3"> History Museums</label><br>
+				<input type="checkbox" id="check4" name="interest">
+				<label for="check4"> Local food</label><br>
+				<input type="checkbox" id="check5" name="interest">
+				<label for="check5"> Colleges</label><br>
+				<input type="checkbox" id="check6" name="interest">
+				<label for="check6"> Sports</label><br>
+				<input type="checkbox" id="check7" name="interest">
+				<label for="check7"> Music and Concerts</label><br>
+			</p>
+			<p>How often would you like to receive these emails?<br/>
+				<input type="radio"checked="checked"/> Every day  
+				<input type="radio"/> Once a week
+				<input type="radio"/> Once a month
+			</p>
+			<div id="thanks">
+				<input id="input2" type="submit" value="Subscribe"/> 
+				<div id="note2">
+				Thank you!
+				</div>
+			</div>
+		</form>
+
+		<footer id="footer">FOOTER</footer>
+
+		<script src="subscribe.js"></script>
+	</body>
+</html>
