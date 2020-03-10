@@ -1,0 +1,192 @@
+<!-- "Attractions" Webpage --> 
+<!-- Maya Scandinaro
+     Yaqara Patterson
+     Chastidy Vasconez
+     Daisy Sanchez
+
+     COMP 20 Web Programming
+     Midterm Project
+     10 March 2020 -->
+<!-- URL:  INCLUDE -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attractions</title>
+    <style type="text/css">
+        h1 {
+            font-size:30px;
+            margin:0px;
+        }
+        h2 {
+            font-size: 25px;
+            margin:0px;
+        }
+        p {
+            font-size:20px;
+            margin:0px;
+        }
+
+        .flex-container {
+            display: inline-flex;
+            flex-flow: row wrap;
+            flex-wrap: wrap;
+  
+            /* Then we define how is distributed the remaining space */
+            justify-content: space-between;
+            align-content: space-between;
+            align-items: stretch;
+  
+            padding: 5;
+            margin: 0;
+            list-style: none;
+            align-content: stretch;
+        }
+
+        .flex-item {
+            background: tomato;
+            padding: 5px;
+            width: 300px;
+            /*height: 150px;*/
+            margin-top: 10px;
+            /*line-height: 150px;*/
+            color: white;
+            font-weight: bold;
+            font-size: 3em;
+            text-align: center;
+         }
+
+    </style>
+
+    <link rel="stylesheet" type = "text/css" href="ExtStyle.css">
+
+</head>
+<body>
+    <div class="container">
+        <header id="header">BOSTON TOURISM</header>
+
+        <div id="navigation">
+            <a href="#">ABOUT BOSTON</a>
+            <a href="#">PLACES TO STAY</a>
+            <a href="#">TOURS/TRAILS</a>
+            <a href="#">VENUES</a>
+            <a href="#">FOOD & SHOPPING</a>
+        </div>
+
+
+        
+        <div id="main_content">
+            <h1>Attractions</h1>
+            <p>
+                Welcome to Boston! It is a place where you can find lots of historic landmarks and architecture in relation to the United States revolutionary battle for independence as well as information on the former enslavement of African Americans and many places to go near the sea. In this page you can find information of trails, landmarks and museums you can visit to learn more about Boston and its history!
+            </p>
+            <br>
+            <br>
+
+            <!-- --------------------------------------------------------------
+                 ------------------------- Trails -----------------------------
+                 ----------------------------------------------------------- -->
+            <h2>Trails</h2>
+            <ul class="flex-container">
+                <li class="flex-item">
+                    <h1>Boston Sports Trail</h1>
+                    <p>
+                        Into Sports? Visit Boston’s historic sports stadiums and sports sites! Learn about Boston’s sports icons and best games. 
+                    </p>
+                </li>
+                <li class="flex-item">
+                    <h1>Freedom Trail</h1>
+                    <p>
+                        Interested in the American Revolutionary War and the fight for independence? Take part in the Freedom Trail! Visit museums, meeting places and historic churches. Learn about Paul Revere’s ride and see the Bunker Hill Memorial. 
+                    </p>
+                </li>
+                <li class="flex-item">
+                    <h1>Women's Heritage Trail</h1>
+                    <p>
+                        Learn about women’s history and the fight for women’s suffrage. Learn about the women who have fought for their rights and made their names a part of American history. 
+                    </p>
+                </li>
+                <li class="flex-item">
+                    <h1>Walk to the Sea</h1>
+                    <p>
+                        Visit Boston’s historic sites and architecture while walking to the beautiful coastline. 
+                    </p>
+                </li>
+            </ul>
+
+            <br>
+            <br>
+
+
+            <!-- --------------------------------------------------------------
+                 -------------------------- Museums ---------------------------
+                 ----------------------------------------------------------- -->
+            <h2>Museums</h2>
+            <ul class="flex-container">
+                <li class="flex-item">
+                    <h1>Boston Tea Party Ships and Museum</h1>
+                    <p>
+                        Go visit the Boston Tea Party Ships and Museum. With interactive exhibits, full-scale replicas of 18th century sailing vessels and reenactments of the historic Boston Tea Party event, you will surely have loads of fun!
+                    </p>
+                </li>
+                <li class="flex-item">
+                    <h1>Paul Revere House</h1>
+                    <p>
+                        The story of Paul Revere is quite well-known for all Americans. Revere took a midnight ride to warn fellow colony militias of the arrival of British forces to Massachusetts, the arrival which preceded the battles of Lexington and Concord. You can now visit his house and follow the same path he took to warn the militias. 
+                    </p>
+                </li>
+                <li class="flex-item">
+                    <h1>Museum of Fine Arts</h1>
+                    <p>
+                        With 450,000 works of art from all over the world, the Museum of Fine Arts is a place you need to visit. Check out the exhibits and expose yourself to both old and new masterpieces to activate your mind. 
+                    </p>
+                </li>
+                <li class="flex-item">
+                    <h1>New England Aquarium</h1>
+                    <p>
+                        Placed right next to the ocean, the New England Aquarium is an incredible place to visit and learn about marine life just off the coast and from around the world. Go pet manta rays and learn about unique species of marine species of marine life. 
+                    </p>
+                </li>
+            </ul>
+
+            <br>
+            <br>
+
+
+            <!-- --------------------------------------------------------------
+                 -------------------- HISTORIC LANDMARKS ----------------------
+                 ----------------------------------------------------------- -->
+            <h2>Historic Landmarks</h2>
+            <ul class="flex-container">
+                <li class="flex-item">
+                    <h1>Bunker Hill Monument</h1>
+                    <p>
+                        Visit the beautiful, 221 feet-tall, granite monument commemorating the Battle of Bunker Hill. It is one of the most well-known and most-visited Boston sites. A revolutionary marvel!
+                    </p>
+                </li>
+                <li class="flex-item">
+                    <h1>USS Constitution</h1>
+                    <p>
+                        Want to see a huge ship? Go and see the U.S.S. Constitution! It is the oldest commissioned naval vessel still afloat. 
+                    </p>
+                </li>
+                <li class="flex-item">
+                    <h1>Boston Public Library</h1>
+                    <p>
+                        Go to the Boston Public Library. Not only does it have a large, unique collection of books and other texts, but it is well known for its beautiful architecture. 
+                    </p>
+                </li>
+                <li class="flex-item">
+                    <h1>Fenway</h1>
+                    <p>
+                        Baseball fans, check out Fenway Park – the oldest stadium in Major League Baseball and the home field for the Boston Red Sox. Even if you aren’t a baseball fan, it is an incredible place to visit and admire.
+                    </p>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
