@@ -1,0 +1,144 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="ExtStyle.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+<style>
+	@media screen and (max-width:700px) {
+		.place_name{
+			text-align:center;
+		}
+		#img1 {
+			margin-left: 20px;
+		}
+
+		#img2 {
+			margin-left: 30px;
+		}
+
+		#img3 {
+			margin-left: 30px;
+		}
+		.place {
+			flex-wrap:wrap;
+		}
+
+		#pageheader {
+			text-align: center;
+		}
+
+
+	
+	}
+
+	@media screen and (max-width:600px) {
+		#section1{
+			font-size:20px;
+		}
+		
+	}
+	/*------------------*/
+	.place {
+		display:flex;
+		flex-direction:row;
+		
+	}
+	.place p {
+		padding-left:30px;
+		padding-bottom: 30px;
+		text-align:justify;
+		font-size:20px;
+	}
+	.more {
+		color:blue;
+	}
+
+	#pageheader {
+		padding:30px;
+		background-color: #4D6273;
+	}
+
+	a {
+		font-size:20px;
+
+	}
+	a:hover {
+		color:#742DCE;
+	}
+
+</style>
+
+	<body>
+
+		<div class="container">
+            <header id="header">BOSTON TOURISM</header>
+
+            <div id="navigation">
+                <a href="#">ABOUT BOSTON</a>
+                <a href="#">PLACES TO STAY</a>
+                <a href="#">TOURS/TRAILS</a>
+                <a href="#">VENUES</a>
+                <a href="#">FOOD & SHOPPING</a>
+            </div>
+
+        <div id="main_content">
+
+
+			<div id="pageheader"> <h1>Shopping & Food </h1> </div>
+			<hr style="border: 2px solid white"></hr>
+			<div class="place" style="border-bottom:2px solid white; padding:30px">
+				<div style="padding-right:50px"> 
+					<h2 class="place_name"> Downtown Crossing </h2>
+					<br/>
+					<p id="section1"> A popular shopping district located conveniently near MBTA station, visit Downtown Crossing to go to a multitude of stores and restaurants and for an easy walk to Boston Common or the Financial District 
+					<br/><br/>
+					<a href="www.downtownboston.org"> Downtown Boston Website </a>
+					</p>
+				</div>
+				<img src="michael-browning-UuqlhvlBlik-unsplash.jpg" style="border-radius:8px; width:400px;max-width:100%" id="img1">
+			</div>
+
+			<hr style="border: 2px solid white"></hr>
+
+			<div class="place" style="border-bottom:2px solid white; padding:30px">
+				<div style="padding-right:50px"> 
+					<h2 class="place_name"> Newbury Street </h2>
+					<br/>
+					<p> An endless street of stores and places to eat. Newbury Street is a popular destination in the warm spring months, located in Back Bay, Boston, stretching a mile long. 
+					<br/> <br/>
+					<a href="http://www.newbury-st.com"> Newbury Street Website </a>
+					</p>
+					
+				</div>
+				<img src="asael-pena-p5mBh7LriOs-unsplash.jpg" style="border-radius:8px; width:400px;max-width:100%" id="img2">
+			</div>	
+
+
+			<hr style="border: 2px solid white"></hr>
+
+			<div class="place" style="border-bottom:2px solid white; padding:30px">
+				<div style="padding-right:50px"> 
+					<h2 class="place_name"> Prudential Center </h2>
+					<br/>
+					<p> The Prudential Center in Back Bay, Boston is an urban shopping mall located at the base of the Prudential Tower. other place to shop and dine. A great option for an indoor experience, despite the weather. It features over 75 shops and restaurants.
+					<br/>
+					<br/>
+					<a href="https://www.prudentialcenter.com/"> Visit Prudential Center's official Website for more information </a> </p>
+				</div>
+
+				<img src="sunyu-kim-Rj6vvs8N4Qg-unsplash.jpg" style="border-radius:8px; width:400px;max-width:100%" id="img3">
+
+
+			</div>
+
+			<hr style="border: 2px solid white"></hr>
+
+		</div>
+
+		 <div id="footer"> Footer
+            </div>
+
+	</body>
+</html>
